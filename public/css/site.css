@@ -1,0 +1,75 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+#text {
+  width: 100%;
+  padding: 20px;
+}
+h2  {
+  font-size: 120px;
+}
+h3 {
+  font-size: 100px;
+}
+h4 {
+  font-size: 80px;
+}
+h5 {
+  font-size: 60px;
+}
+.name {
+  color: #F59CA9;
+}
+.contact {
+  margin-top: -100px;
+  margin-bottom: 100px;
+  box-shadow: 0px;
+  font-size: 20px;
+  padding: 20px;
+}
+.contactDisplay {
+  border: 2px solid #F59CA9;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  display: block;
+}
+.contactDisplay input, textarea, p {
+  border: none;
+  outline: none;
+  width: 80%;
+}
+.contactDisplay i {
+  color: #F59CA9;
+}
+.divider {
+  padding: 10px;
+  color: #F59CA9;
+}
+.buttonDiv {
+  text-align: center;
+}
+.thanks {
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid #F59CA9;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+}
+.thanks i {
+  color: #F59CA9;
+}
+footer {
+  background-color: #75717B;
+  width: 100%;
+  font-size: 20px;
+}
+footer a {
+  color: #F0EDEE;
+  padding: 20px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #FFD9DA;
+}

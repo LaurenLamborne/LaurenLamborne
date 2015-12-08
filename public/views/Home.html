@@ -1,0 +1,52 @@
+<div ng-controller="HomeController as vm">
+	<div id="text">
+		<h2>Hello and Welcome.</h2>
+		<h3>I am <span class="name">Lauren Lamborne</span>, a full-stack JavaScript developer.
+			<h4>I am diligently chipping away at building something special on my little corner of the internet and can't wait to share it with you soon!</h4>
+			<h5>Until then, please drop me a line here.</h5>
+		</div>
+		<div layout="row" layout-align="center center">
+			<div class="contact" ng-hide="vm.sent" flex-sm="100" flex-gt-sm="90" flex-gt-md="60" flex-gt-lg="60">
+				<div flex-sm="100" flex-gt-sm="100" layout-sm="column">
+					<div class="contactDisplay">
+						<i class="zmdi zmdi-account-o"></i>
+						<span class="divider"> | </span>
+						<input type="text" placeholder="name" name="userName" ng-model="vm.contact.name" required>
+					</div>
+					<div class="contactDisplay">
+						<i class="zmdi zmdi-email"></i>
+						<span class="divider"> | </span>
+						<input type="email" placeholder="email" name="email" ng-model="vm.contact.email" required>
+					</div>
+					<div class="contactDisplay">
+						<i class="zmdi zmdi-edit"></i>
+						<span class="divider"> | </span>
+						<textarea placeholder="message" ng-model="vm.contact.msg" columns="1" required></textarea>
+					</div>
+					<div class="buttonDiv">
+						<md-button ng-click="vm.sendMail()" type="button" class="md-raised" style="background-color: #F0EDEE;"
+						aria-label="Save Project">Send</md-button>
+					</div>
+				</div>
+			</div>
+			<div class="contact" ng-show="vm.sent" flex-sm="100" flex-gt-sm="90" flex-gt-md="60" flex-gt-lg="60">
+				<div class="thanks">
+					<i class="zmdi zmdi-check-circle"></i>
+					Thank you! I will be in touch soon.
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div layout="row" layout-align="center center">
+				<div >
+					<a class="zmdi zmdi-linkedin-box"
+					href="https://www.linkedin.com/in/laurenlamborne
+					">LaurenLamborne</a>
+				</div>
+				<div >
+					<a class="zmdi zmdi-github-box"
+					href="https://github.com/LaurenLamborne">LaurenLamborne</a>
+				</div>
+			</div>
+		</footer>
+	</div>
