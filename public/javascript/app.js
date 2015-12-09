@@ -6,7 +6,7 @@
 	function Config($stateProvider, $urlRouterProvider, $httpProvider) {
 		$stateProvider.state('Home',{
 			url: '/',
-			templateUrl: 'views/home.html'
+			templateUrl: 'views/Home.html'
 		});
 		$urlRouterProvider.otherwise('/');
 	}
