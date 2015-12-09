@@ -41,7 +41,7 @@ app.get('/', function(req, res) {
 // API
 app.use('/api/msg', msgRoutes);
 
-var server = app.listen(port, function() {
+var server = app.listen(port, "0.0.0.0", function() {
 	var host = server.address().address;
 	console.log('Example app listening at http://localhost:' + port);
 });

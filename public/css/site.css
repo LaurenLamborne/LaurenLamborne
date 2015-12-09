@@ -1,31 +1,45 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.6rem;
+  }
 }
 #text {
   width: 100%;
+  font-size: 1em;
   padding: 20px;
+  overflow: hidden;
 }
+
 h2  {
-  font-size: 120px;
+  font-size: 8em;
 }
 h3 {
-  font-size: 100px;
+  font-size: 7em;
 }
 h4 {
-  font-size: 80px;
+  font-size: 5em;
 }
 h5 {
-  font-size: 60px;
+  font-size: 3em;
 }
 .name {
   color: #F59CA9;
 }
 .contact {
-  margin-top: -100px;
+  margin-top: -80px;
   margin-bottom: 100px;
   box-shadow: 0px;
-  font-size: 20px;
+  font-size: 1.5em;
   padding: 20px;
+  width: 60%;
+  min-width: 320px;
 }
 .contactDisplay {
   border: 2px solid #F59CA9;
@@ -38,6 +52,7 @@ h5 {
   border: none;
   outline: none;
   width: 80%;
+  resize: none;
 }
 .contactDisplay i {
   color: #F59CA9;
@@ -50,7 +65,7 @@ h5 {
   text-align: center;
 }
 .thanks {
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
   border: 2px solid #F59CA9;
   margin: 10px;
@@ -63,7 +78,8 @@ h5 {
 footer {
   background-color: #75717B;
   width: 100%;
-  font-size: 20px;
+  overflow: hidden;
+  font-size: 1.5em;
 }
 footer a {
   color: #F0EDEE;

@@ -1,7 +1,7 @@
 {
-  "name": "appname",
+  "name": "LaurenLamborne",
   "version": "0.0.0",
-  "description": "An application for the Coder Camps FullStack JS course",
+  "description": "Personal Site",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

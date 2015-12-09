@@ -6,8 +6,8 @@
 			<h5>Until then, please drop me a line here.</h5>
 		</div>
 		<div layout="row" layout-align="center center">
-			<div class="contact" ng-hide="vm.sent" flex-sm="100" flex-gt-sm="90" flex-gt-md="60" flex-gt-lg="60">
-				<div flex-sm="100" flex-gt-sm="100" layout-sm="column">
+			<div class="contact" ng-hide="vm.sent">
+				<div>
 					<div class="contactDisplay">
 						<i class="zmdi zmdi-account-o"></i>
 						<span class="divider"> | </span>
@@ -21,7 +21,7 @@
 					<div class="contactDisplay">
 						<i class="zmdi zmdi-edit"></i>
 						<span class="divider"> | </span>
-						<textarea placeholder="message" ng-model="vm.contact.msg" columns="1" required></textarea>
+						<textarea placeholder="message" ng-model="vm.contact.msg" rows="5" required></textarea>
 					</div>
 					<div class="buttonDiv">
 						<md-button ng-click="vm.sendMail()" type="button" class="md-raised" style="background-color: #F0EDEE;"
@@ -29,7 +29,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="contact" ng-show="vm.sent" flex-sm="100" flex-gt-sm="90" flex-gt-md="60" flex-gt-lg="60">
+			<div class="contact" ng-show="vm.sent">
 				<div class="thanks">
 					<i class="zmdi zmdi-check-circle"></i>
 					Thank you! I will be in touch soon.
