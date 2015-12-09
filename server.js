@@ -2,11 +2,18 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8000;
 var mongoose = require('mongoose');
 require('./models/MsgModel');
 
-// mongoose.connect("mongodb://localhost/LaurenLamborne");
+mongoose.connect('mongodb://LL123:1234@ds041934.mongolab.com:41934/post', function (err) {
+	if (err){
+		return console.log("Error database", err);
+	}
+	else {
+		console.log("Connected to lab");
+	}
+});
 
 app.set('views', path.join(__dirname, 'views'));
 //set the view engine that will render HTML from the server to the client
